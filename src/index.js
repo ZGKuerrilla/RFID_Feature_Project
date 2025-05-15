@@ -1,3 +1,5 @@
+import {} from './model/rd2.js'
+
 const { SerialPort } = require('serialport');
 const { buildSetPowerFrame, buildGetPowerFrame, parsePrivatePowerResponse } = require('./powerControl');//引入設定功率模組 
 const menu = require('./menu');//引入選單模組 
