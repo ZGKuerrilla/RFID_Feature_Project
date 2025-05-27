@@ -1,19 +1,21 @@
 {
-  "dependencies": {
-    "crc": "^4.3.2",
-    "serialport": "^13.0.0"
-  },
-  "name": "project",
+  "name": "rd2_test",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "RD2 RFID 讀卡器控制模組（SerialPort）",
+  "main": "src/model/rd2.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {},
-  "description": ""
+  "keywords": [
+    "rfid",
+    "rd2",
+    "serialport",
+    "reader"
+  ],
+  "author": "欣展工業",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "serialport": "^10.0.0"
+  }
 }
