@@ -1,19 +1,25 @@
 {
-  "name": "rd2_test",
+  "name": "rd2-rfid-reader",
   "version": "1.0.0",
-  "description": "RD2 RFID 讀卡器控制模組（SerialPort）",
-  "main": "src/model/rd2.js",
+  "description": "RD2 RFID Reader control service using Node.js, Express and SerialPort",
+  "main": "src/index.js",
   "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js"
+  },
   "keywords": [
     "rfid",
     "rd2",
     "serialport",
-    "reader"
+    "reader",
+    "express",
+    "rest-api",
+    "hardware"
   ],
-  "author": "欣展工業",
+  "author": "李小鹿",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "serialport": "^10.0.0"
